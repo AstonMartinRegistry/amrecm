@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Marcellus' rel='stylesheet'>
+    <style>
+        body {
+            background-image: url('picture1.jpg');
+            background-size: cover;
+            background-position: center 46.5%;
+        }
+
+        .overlay {
+            background-color: rgba(255, 255, 255, 0.90);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .logo {
+            border: 5px solid black;
+            justify-content: center;
+            display: flex; 
+            padding-top: 5%;
+            padding-bottom: 3%;
+        }
+
+
+        
+
+        .links a {
+           
+            text-decoration: none;
+        }
+
+        .view-pdf {
+            border: 5px solid black;
+            text-align: center;
+            font-family: 'Julius Sans One', sans-serif;
+            font-size: 24px;
+            margin-top: 5%; /* Increase the top margin to add more space */
+        }
+
+        .view-pdf a {
+            background-color: lightgray;
+            border: none;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+
+        .view-pdf a:hover {
+            background-color: gray; /* Change the background color on hover */
+            color: white; /* Change the text color on hover */
+        }
+
+        .leftbox {
+            border: 5px solid yellow;
+            width: 25%;
+            
+        }
+
+        .rightbox {
+            border: 5px solid green;
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+
+        .amr {
+            background-color: #b3db8c;
+            color: black;
+            padding-top: 0.2vw;
+            padding-bottom: 0.2vw;
+            padding-left: 0.5vw;
+            padding-right: 0.5vw;
+            font-size: 2vw;
+        }
+
+        .amrtext {
+            background-color: #b3db8c;
+            color: black;
+            padding-top: 0.2vw;
+            padding-bottom: 0.2vw;
+            padding-left: 0.5vw;
+            padding-right: 0.5vw;
+            display: inline;
+        }
+
+        .ecm {
+            background-color: black;
+            color: white;
+            padding-top: 0.2vw;
+            padding-bottom: 0.2vw;
+            padding-left: 0.5vw; 
+            padding-right: 0.5vw;
+            font-size: 2vw;
+        }
+
+        .ecmtext {
+            background-color: black;
+            color: white;
+            padding-top: 0.2vw;
+            padding-bottom: 0.2vw;
+            padding-left: 0.5vw;
+            padding-right: 0.5vw;
+            display: inline;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            width: 70%;
+            border: 5px solid red;
+            align-content: center;
+            margin: auto;
+            justify-content: center;
+        }
+
+        .description {
+            font-family: 'Marcellus', sans-serif;
+            font-size: 20px;
+        }
+
+      
+
+
+        @media (max-width: 600px) {
+            body {
+                background-image: url('picture1.jpg');
+                background-position: center 0%;
+            }
+
+            .logo {
+                font-size: 28px; /* Decrease the font size */
+            }
+
+            .links {
+                font-size: 20px; /* Decrease the font size */
+            }
+
+            .view-pdf {
+                font-size: 20px; /* Decrease the font size */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overlay">
+        <div class="logo">
+            <div class="wrapper">
+                <div style="display: flex; font-family: 'Marcellus', sans-serif;">
+                    <div class="amr">AMR</div>
+                    <div class="ecm">ECM</div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="leftbox">
+                <img src="picture2.jpg" width="100%"/>
+            </div>
+            <div class="rightbox">
+                <div class="description">
+                    <p>AMR ECM Services offers discrete boutique services to help you buy and <br /> sell cars online. We offer: </p>
+                    
+                    <ul>
+                        <li>Brokering</li>
+                        <li>Market Analysis</li>
+                        <li>Historical Documentation</li>
+                    </ul>
+                    <p>Contact us on Instagram at 
+                        <div class="links">
+                            <a href="https://www.instagram.com/exoticcarmarket/?hl=en">
+                                <div class="amrtext">@astonmartinregistry</div>
+                            </a> and
+                            <a href="https://www.instagram.com/astonmartinregistry/?hl=en">
+                                <div class="ecmtext">@exoticcarmarket</div>
+                            </a>
+                        </div>
+                    </p>
+                    <p>Email us at amrecmservices (at) gmail.com</p>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="view-pdf">
+            <a href="#">Prospectus PDF</a>
+        </div>
+
+    </div>
+</body>
+</html>
+
