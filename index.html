@@ -11,7 +11,7 @@
         }
 
         .overlay {
-            background-color: rgba(255, 255, 255, 0.90);
+            background-color: rgba(255, 255, 255, 0.88);
             position: absolute;
             top: 0;
             bottom: 0;
@@ -20,7 +20,7 @@
         }
 
         .logo {
-            border: 5px solid black;
+            
             justify-content: center;
             display: flex; 
             padding-top: 5%;
@@ -36,7 +36,7 @@
         }
 
         .view-pdf {
-            border: 5px solid black;
+            
             text-align: center;
             font-family: 'Julius Sans One', sans-serif;
             font-size: 24px;
@@ -44,7 +44,7 @@
         }
 
         .view-pdf a {
-            background-color: lightgray;
+            background-color: darkgray;
             border: none;
             color: black;
             padding: 15px 32px;
@@ -63,15 +63,16 @@
         }
 
         .leftbox {
-            border: 5px solid yellow;
+           
             width: 25%;
             
         }
 
         .rightbox {
-            border: 5px solid green;
+            
             padding-left: 2%;
             padding-right: 2%;
+            width: 55%;
         }
 
         .amr {
@@ -118,7 +119,7 @@
             display: flex;
             flex-direction: row;
             width: 70%;
-            border: 5px solid red;
+           
             align-content: center;
             margin: auto;
             justify-content: center;
@@ -129,27 +130,157 @@
             font-size: 20px;
         }
 
-      
 
-
-        @media (max-width: 600px) {
+        @media (max-width: 1350px) {
             body {
-                background-image: url('picture1.jpg');
-                background-position: center 0%;
+                background-position: center 42%;
+            }        
+
+            .container {
+                width: 80%;
+            }
+
+            .amr {
+                font-size: 2.2vw;
+            }
+
+            .ecm {
+                font-size: 2.2vw;
+            }
+            
+        }
+
+        @media (max-width: 1200px) {
+            body {
+                background-position: center 38%;
+            }
+
+            .container {
+                width: 90%;
+            }
+
+            .amr {
+                font-size: 2.4vw;
+            }
+
+            .ecm {
+                font-size: 2.4vw;
             }
 
             .logo {
-                font-size: 28px; /* Decrease the font size */
+                padding-bottom: 6%;
+            }
+        }
+
+        @media (max-width: 1080px) {
+            body {
+                background-position: center 20%;
+                background-size: 150%;
             }
 
-            .links {
-                font-size: 20px; /* Decrease the font size */
+            .amr {
+                font-size: 3.5vw;
+            }
+
+            .ecm {
+                font-size: 3.5vw;
+            }
+
+            .container {
+                width: 98%;
+            }
+
+            .container {
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+
+            .leftbox {
+                order: -1;
+                width: 51%;
+            }
+
+            .rightbox {
+                order: 1;
+                width: 47%;
+            }
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: auto;
+                left: 0;
+                right: 0;
             }
 
             .view-pdf {
-                font-size: 20px; /* Decrease the font size */
+                margin-bottom: 10%;
             }
         }
+        @media (max-width: 950px) {
+            body {
+                background-position: center 6%;
+                background-size: 150%;
+            }
+
+            .leftbox {
+                width: 67%;
+            }
+
+            .rightbox {
+                width: 63%;
+            }
+        }
+
+        @media (max-width: 700px) {
+            body {
+                background-position: center 6%;
+                background-size: 175%;
+            }
+
+            .amr {
+                font-size: 4.2vw;
+            }
+
+            .ecm {
+                font-size: 4.2vw;
+            }
+
+            .leftbox {
+                width: 80%;
+            }
+
+            .rightbox {
+                width: 76%;
+            }
+
+            .view-pdf {
+                margin-top: 9%;
+                margin-bottom: 15%;
+            }
+        }
+
+        @media (max-width: 650px) {
+            body {
+                background-position: center 6%;
+                background-size: 195%;
+            }
+            
+            .leftbox {
+                width: 80%;
+            }
+
+            .description {
+                font-size: 17px;
+            }
+            
+            .view-pdf {
+                font-size: 19px;
+            }
+        }
+        
+        
+
     </style>
 </head>
 
@@ -169,7 +300,7 @@
             </div>
             <div class="rightbox">
                 <div class="description">
-                    <p>AMR ECM Services offers discrete boutique services to help you buy and <br /> sell cars online. We offer: </p>
+                    <p>AMR ECM Services offers discrete boutique services to help you buy and sell cars online. We offer: </p>
                     
                     <ul>
                         <li>Brokering</li>
@@ -178,10 +309,10 @@
                     </ul>
                     <p>Contact us on Instagram at 
                         <div class="links">
-                            <a href="https://www.instagram.com/exoticcarmarket/?hl=en">
+                            <a href="https://www.instagram.com/astonmartinregistry/?hl=en">
                                 <div class="amrtext">@astonmartinregistry</div>
                             </a> and
-                            <a href="https://www.instagram.com/astonmartinregistry/?hl=en">
+                            <a href="https://www.instagram.com/exoticcarmarket/?hl=en">
                                 <div class="ecmtext">@exoticcarmarket</div>
                             </a>
                         </div>
